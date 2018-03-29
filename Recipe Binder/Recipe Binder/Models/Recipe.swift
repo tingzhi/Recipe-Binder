@@ -8,26 +8,25 @@
 
 import Foundation
 
-class Recipe {
+struct Recipe {
     
-//    enum Unit {
-//        case g
-//        case lb
-//        case tsp
-//        case tbsp
-//        case clove
-//    }
-//
-//    struct Indredient {
-//        var item: String
-//        var quantity: Double
-//        var unit: Unit
-//    }
-//
-//    var id: Int
-//    var title: String
-//    var ingredientList: [Indredient]
-    //var instructions: [String]
+    static var idFactory = 0
     
+    static func getUniqueId() -> Int {
+        idFactory += 1
+        return idFactory
+    }
+    
+    var id: Int
+    var title: String
+    var ingredients: [Ingredient]
+    // TODO: Add cooking instructions
+    //    var instructions: [String]
+    
+    init(title: String, ingredients: [Ingredient]) {
+        self.id = Recipe.getUniqueId()
+        self.title = title
+        self.ingredients = ingredients
+    }
     
 }

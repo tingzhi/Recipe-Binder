@@ -29,10 +29,10 @@
             </objects>
             <point key="canvasLocation" x="-1489" y="-759"/>
         </scene>
-        <!--Recipe Library-->
+        <!--Library-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="Recipe Library" id="BYZ-38-t0r" customClass="ViewController" customModule="Recipe_Binder" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Library" id="BYZ-38-t0r" customClass="ViewController" customModule="Recipe_Binder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -85,10 +85,10 @@
             </objects>
             <point key="canvasLocation" x="182" y="-759"/>
         </scene>
-        <!--Recipe Detail-->
+        <!--Detail-->
         <scene sceneID="yrh-jd-VfY">
             <objects>
-                <viewController title="Recipe Detail" id="JZS-Fe-PsY" customClass="RecipeDetailViewController" customModule="Recipe_Binder" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Detail" id="JZS-Fe-PsY" customClass="RecipeDetailViewController" customModule="Recipe_Binder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bxQ-gd-MVL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -134,10 +134,10 @@
             </objects>
             <point key="canvasLocation" x="-586" y="72"/>
         </scene>
-        <!--Grocery List-->
+        <!--List-->
         <scene sceneID="xAy-Gg-IzU">
             <objects>
-                <viewController title="Grocery List" id="zwg-kg-0yK" customClass="GroceryListViewController" customModule="Recipe_Binder" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="List" id="zwg-kg-0yK" customClass="GroceryListViewController" customModule="Recipe_Binder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xvH-f4-5IS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

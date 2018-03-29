@@ -11,11 +11,23 @@ import Foundation
 // Store all the recipes
 
 class RecipeStore {
-    var recipeList: [Recipe]
     
-    init(recipeList: [Recipe]) {
-        self.recipeList = recipeList
+    var recipeList = [Recipe]()
+    
+    func addRecipe(title: String, ingredients: [Ingredient]) {
+        let recipe = Recipe(title: title, ingredients: ingredients)
+        recipeList.append(recipe)
     }
     
+    func removeRecipe(title: String) {
+        
+    }
     
+    func removeRecipe(id: Int) {
+        
+    }
+    
+    func removeAllRecipes() {
+        
+    }
 }

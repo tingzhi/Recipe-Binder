@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    var recipeStore = RecipeStore()
+    
     let recipes = ["French Onion Soup", "Ribeye Steak"]
     
     // Table View Delegate Methods
@@ -50,6 +52,20 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.title = "Library"
+        
+        // Rib-Eye Steak Recipe
+        let recipeTitle = "Rib-Eye Steak"
+        
+        let steak = Ingredient(1.5, Unit.lb, of: "boneless rib-eye steak")
+        let salt = Ingredient(1.0, Unit.tsp, of: "salt")
+        let blackPepper = Ingredient(1.0, Unit.tsp, of: "black pepper")
+        
+        let ingredients = [steak, salt, blackPepper]
+        
+        recipeStore.addRecipe(title: recipeTitle, ingredients: ingredients)
+        
+        // French Onion Soup Recipe
+        
     }
 
     override func didReceiveMemoryWarning() {
