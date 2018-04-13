@@ -1,0 +1,20 @@
+template for ingredient
+
+class IngredientTemplate {
+	var id: Int
+	var name: String	// internal		salt
+	var displayName: String	// external for display		Salt
+	
+	
+}
+
+class IngredientInstance {
+	var quantity: Int
+	var unit: Unit
+	var ingredient: IngredientTemplate
+}
+
+
+"boneless rib-eye steak"
+Boneless Rib-eye Steak
+
