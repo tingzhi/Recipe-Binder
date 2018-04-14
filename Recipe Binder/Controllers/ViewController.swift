@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     var recipeStore = RecipeStore()
@@ -54,16 +55,16 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         self.title = "Library"
         
         // Rib-Eye Steak Recipe
-        let recipeTitle = "Rib-Eye Steak"
+        //let recipeTitle = "Rib-Eye Steak"
         
-        let steak = Ingredient(1.5, Unit.lb, of: "boneless rib-eye steak")
-        let salt = Ingredient(1.0, Unit.tsp, of: "salt")
-        let blackPepper = Ingredient(1.0, Unit.tsp, of: "black pepper")
+//        let steak = Ingredient(1.5, Unit.lb, of: "boneless rib-eye steak")
+//        let salt = Ingredient(1.0, Unit.tsp, of: "salt")
+//        let blackPepper = Ingredient(1.0, Unit.tsp, of: "black pepper")
         
-        let ingredients = [steak, salt, blackPepper]
-        
-        recipeStore.addRecipe(title: recipeTitle, ingredients: ingredients)
-        
+        //let ingredients = [steak, salt, blackPepper]
+        for recipeName in recipes {
+            recipeStore.addRecipe(name: recipeName)
+        }
         // French Onion Soup Recipe
         
     }
